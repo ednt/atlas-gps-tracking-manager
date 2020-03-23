@@ -25,12 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        if UserDefaults.standard.object(forKey: "url") != nil {
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
-            self.window?.makeKeyAndVisible()
-        }
+//        if UserDefaults.standard.object(forKey: "url") != nil {
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+//            self.window?.makeKeyAndVisible()
+//        }
         
         NotificationCenter.default.addObserver(self, selector: #selector(onReceive(_:)), name: MainViewController.eventLogin, object: nil)
 

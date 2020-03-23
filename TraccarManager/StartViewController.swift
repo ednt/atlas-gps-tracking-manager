@@ -15,10 +15,11 @@
 //
 
 import UIKit
+import iOSDropDown
 
 class StartViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var serverField: UITextField!
+    @IBOutlet weak var serverField: DropDown!
     @IBOutlet weak var startButton: UIButton!
     
     @IBAction func onStart(_ sender: AnyObject) {
@@ -57,6 +58,9 @@ class StartViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         serverField.delegate = self
+        serverField.optionArray = ["URL_1",
+                                   "URL_2",
+                                   "URL_3"]
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

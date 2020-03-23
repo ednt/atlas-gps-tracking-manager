@@ -6,4 +6,5 @@ target 'TraccarManager' do
   pod 'Firebase/Messaging'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'iOSDropDown'
 end
