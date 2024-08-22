@@ -18,6 +18,7 @@
 		CE07211D1C86EB9800D057CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE07211B1C86EB9800D057CE /* LaunchScreen.storyboard */; };
 		CE4BBC0B1DE844300074B0CC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4BBC0A1DE844300074B0CC /* WebKit.framework */; };
 		CE850DB61E18EF0A00F4F73A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE850DB51E18EF0A00F4F73A /* StartViewController.swift */; };
+		D9FCD3DC2C7751C9006BFD4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9FCD3DB2C7751C9006BFD4D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CE07211E1C86EB9800D057CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4BBC0A1DE844300074B0CC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CE850DB51E18EF0A00F4F73A /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		D9FCD3DB2C7751C9006BFD4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		CE0721061C86EB9800D057CE = {
 			isa = PBXGroup;
 			children = (
+				D9FCD3DB2C7751C9006BFD4D /* GoogleService-Info.plist */,
 				CE0721111C86EB9800D057CE /* TraccarManager */,
 				CE0721101C86EB9800D057CE /* Products */,
 				CE4BBC071DE83EEE0074B0CC /* Frameworks */,
@@ -100,7 +103,7 @@
 				CE07210B1C86EB9800D057CE /* Sources */,
 				CE07210C1C86EB9800D057CE /* Frameworks */,
 				CE07210D1C86EB9800D057CE /* Resources */,
-				CBA62FB01F5E1A9D00BEDA76 /* ShellScript */,
+				CBA62FB01F5E1A9D00BEDA76 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FCD3DC2C7751C9006BFD4D /* GoogleService-Info.plist in Resources */,
 				CE07211D1C86EB9800D057CE /* LaunchScreen.storyboard in Resources */,
 				CE07211A1C86EB9800D057CE /* Assets.xcassets in Resources */,
 				CE0721181C86EB9800D057CE /* Main.storyboard in Resources */,
@@ -172,15 +176,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CBA62FB01F5E1A9D00BEDA76 /* ShellScript */ = {
+		CBA62FB01F5E1A9D00BEDA76 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
 				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +299,7 @@
 				OTHER_SWIFT_FLAGS = "-D FIREBASE";
 				PRODUCT_BUNDLE_IDENTIFIER = de.ednt.AtlasManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
 			};
@@ -425,6 +431,7 @@
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = de.ednt.AtlasManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
@@ -450,6 +457,7 @@
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = de.ednt.AtlasManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
 			};
